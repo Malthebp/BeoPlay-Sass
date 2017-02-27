@@ -1,0 +1,296 @@
+@import '_variables';
+body{
+	margin:0% 3%;
+	font-family: $font;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+header{
+	position: fixed;
+	width:96%;
+	background-color: $white;
+	img{
+		display: inline-block;
+		left:0;
+		float:left;
+	}
+	nav {
+		text-align: center;
+		width:50%;
+		margin:25px auto;
+	}
+		li button{
+			background-color: $black;
+			border-radius: 20px;
+			width:50px;
+			color: $white;
+			border:none;
+			height: 25px;
+			cursor:pointer;
+		}
+		li button:hover{
+			background-color: #171717;
+		}
+}
+
+
+#topNav li, #secondNav li{
+	display:inline-block;
+}
+
+#secondNav li{
+	margin-left:10px;
+}
+
+#topNav{
+	font-size: 1.3em;
+	li{
+		margin-left: 20px;
+	}
+}
+
+#topNav a, #secondNav a{
+	color:$black;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#topNav a:hover, #secondNav a:hover, #bottomNav a:hover{
+	text-decoration: underline;
+}
+
+#secondNav{
+	margin-top: 30px;
+	font-size: 1em;
+	margin-bottom: -15px;
+}
+
+
+main {
+	background: #f0f0f0;
+	padding-top:200px;
+	display: table;
+}
+
+article img{
+	margin-top: 20px;
+	width:40%;
+	float:left;
+	height:auto;
+	margin-left:10%;
+
+}
+
+article {
+	h1, p{
+		width:38%;
+		float:left;
+		color:$grey;
+		font-weight: normal;
+		margin-left: 2%;
+	}
+	p {
+		font-size: 1.8em;
+		padding-right:10%; 
+	}
+	h1 {
+		font-size: 2.5em;
+		margin-top: 50px;
+		letter-spacing: 5px;
+		margin-bottom:10px;
+		text-transform: uppercase;
+	}
+}
+
+
+.price{
+	margin-top: 50px;
+}
+
+.currency{
+	font-size: 0.7em;
+	margin-right:10px;
+}
+
+#bottomNav{
+	clear:both;
+	margin-top: 20px;
+	background-color: #383838;
+	text-align: center;
+	color:$grey;
+	li{
+		display:inline-block;
+		margin-right: 15px;
+	}
+}
+
+#bottomTopNav{
+	border-bottom: 1px solid $grey;
+	font-size:1.3em;
+	padding:10px 0px;
+	a {
+		color:$grey;
+		list-style-type: none;
+		text-decoration: none;
+	}
+	select{
+		background-color: #1F1F1F;
+		border-radius:20px;
+		border:none;
+		color:$grey;
+		padding:5px 0px;
+		width:15%;
+	}
+}
+#bottomNavBot{
+	padding:10px 0px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	border-bottom: 2px solid #212121;
+	a{ 
+		color:$white;
+		text-decoration: none;
+	}
+}
+
+#JustTheTwo{
+	background-color: $darkgrey2;
+	height:300px;
+	text-align:center;
+	p{
+		color:$white;
+		font-size: 3em;
+		font-weight: bold;
+		font-family: serif;
+		padding-top:100px;
+	}
+	a{
+		text-transform: uppercase;
+		text-align: center;
+		color:$grey;
+		text-decoration: none;
+	}
+}
+
+
+footer{
+	background-color: $darkgrey2;
+	text-align: center;
+	text-transform: uppercase;
+	color:$grey;
+	padding-bottom: 20px;
+	a{
+		text-decoration: none;
+		color:$grey;
+		font-size: 0.8em;
+	}
+	p{
+		display:inline-block;
+		font-size: 0.8em;
+	}
+	p:first-child{
+		margin-right:20px;
+	}
+}
+#modal-box{
+	position:fixed;
+	bottom:0;
+	right:0;
+	background-color: $lightgrey;
+	img{
+		float:left;
+		position:relative;
+	}
+	a{
+		display:block;
+		text-align: center;
+		margin: 10px;
+	}
+	a:hover{
+		text-decoration: none;
+		background-color: $darkgrey;
+	}
+	button{
+		position:absolute;
+		top:-10px;
+		left:-10px;
+		z-index: 1;
+		width:30px;
+		height:30px;
+		background-color: $darkgrey;
+		border:none ;
+		border-radius: 50%;
+		color:$white;
+		cursor:pointer;
+	}
+}
+
+.content{
+	text-align: center;
+	margin-top:20px;
+	color:$grey;
+}
+
+.heading{
+	font-size:1.5em;
+	color:grey;
+	padding-top:10px;
+	padding-left: 10px;
+
+}
+
+.btn {
+	text-decoration: none;
+	width: 250px;
+    margin-right: 20px;
+	background-color: $darkgrey2;
+	float:right;
+	color:$white;
+	margin-top:20px;
+}
+
+.sign-btn{
+	padding:15px 0;
+	border-radius: 5px;
+}
+
+#modal-box-content{
+	display: table;
+	width:100px;
+	padding:20px;
+}
+
+#Show-Modal-Box{
+	position:fixed;
+	bottom:0px;
+	right:20px;
+	margin-bottom:20px;
+	background-color: $lightgrey;
+	width:inherit;
+	padding:20px 10px;
+	text-align: center;
+	display:none;
+}
+
+#SlideUp{
+	position:absolute;
+	top:-10px;
+	left:-10px;
+	z-index: 1;
+	width:30px;
+	height:30px;
+	background-color: $darkgrey;
+	border:none ;
+	border-radius: 50%;
+	color:$white;
+	cursor:pointer;
+}
+
+#SlideUp:hover, #modal-box button:hover{
+	background-color: #575757;
+}
+
+
